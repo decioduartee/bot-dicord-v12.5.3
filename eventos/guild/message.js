@@ -1,5 +1,5 @@
 module.exports = (Discord, client, message) => {
-    const prefix = 's.';
+    const prefix = process.env.DISCORD_PREFIX;
     if(!message.content.startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);

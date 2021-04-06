@@ -5,6 +5,7 @@
   "main": "main.js",
   "dependencies": {
     "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
     "fs": "0.0.1-security",
     "node.js": "^0.0.1-security"
   },

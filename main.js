@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+require('dontenv').config();
 const client = new Discord.Client({ portials: ["MESSAGE", "CHANNEL", "REACTION"] });
 
 client.comandos = new Discord.Collection();
@@ -8,4 +9,4 @@ client.eventos = new Discord.Collection();
     require(`./handlers/${handler}`)(client, Discord)
 })
 
-client.login('ODIxNzk5MDU2MTYyMTYwNjgw.YFI-Aw.Tez6ceXgwF8CZKHYVWno6P0S-60');
+client.login(process.env.DISCORD_TOKEN);
