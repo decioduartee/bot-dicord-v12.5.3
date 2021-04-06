@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-require('dontenv').config();
+require('dotenv').config();
 const client = new Discord.Client({ portials: ["MESSAGE", "CHANNEL", "REACTION"] });
 
 client.comandos = new Discord.Collection();

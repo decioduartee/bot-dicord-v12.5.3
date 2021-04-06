@@ -1,3 +1,4 @@
+require('dotenv').config();
 module.exports = (Discord, client, message) => {
     const prefix = process.env.DISCORD_PREFIX;
     if(!message.content.startsWith(prefix) || message.author.bot) return;
